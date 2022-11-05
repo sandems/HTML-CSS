@@ -6,6 +6,7 @@ body{
 
 #container{
     background-image: url('../imagens/espaco.jpg');
+    background-position: center center;
     height: 100vh;
     width: 100%;
     
