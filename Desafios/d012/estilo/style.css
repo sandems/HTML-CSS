@@ -16,7 +16,7 @@
 
 html, body{
     min-height: 100vh;
-    background-color: darkgrey;
+    background-color: white;
     font-family: var(--font01);
 }
 
@@ -47,6 +47,11 @@ a:hover{
     text-decoration: underline;
 }
 
+main{
+    max-width: 700px;
+    margin: auto;
+}
+
 section{
     padding-left: 30px;
     padding-top: 10vh;
@@ -54,6 +59,10 @@ section{
     line-height: 2em;
     font-family: var(--font03);
     font-size: 3vw;
+}
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.normal{
@@ -64,12 +73,30 @@ section.normal{
 section.imagem{
     background-color: rgb(83, 0, 0);
     color: white;
+    box-shadow: inset 6px 6px 6px rgba(0, 0, 0, 0.500);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 section.imagem > p{
-    background-color: rgba(0, 0, 0, 0.400);
+    background-color: rgba(0, 0, 0, 0.500);
+    text-shadow: 1px 1px 1px black;
     display: inline-block;
+    border-radius: 10px;
     padding: 20px;
+    
+}
+
+section#img01{
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    
+}
+
+section#img02{
+    background-image: url('../imagens/background002.jpg');
+    background-position: right center;
+    
 }
 
 footer{
