@@ -8,12 +8,29 @@
 </head>
 <body>
     <h1>Exemplo de forumlário</h1>
-    <form action="cadastro.php" method="get">
-        <p>
-            <label for="imail">E-mail:</label>
-            <input type="email" name="email" id="imail">
-        </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="iname">Nome:</label>
+                <input type="text" name="name" id="iname" minlength="5" maxlength="20" placeholder="Usuário">
+            </p>
+            <p>
+                <label for="imail">E-mail:</label>
+                <input type="email" name="email" id="imail" autocomplete="email" placeholder="e-mail" >
+            </p>
+            <p>
+                <label for="iphone">Telefone:</label>
+                <input type="tel" name="tel" id="iphone" autocomplete="tel" pattern="^\(\d{2}\)\d{4, 5}-\d{4, 5}$" placeholder="(xx)xxxx-xxxx" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
+
+    <!--Estudar mais sobre RegEx-->
     
 </body>
 </html>
