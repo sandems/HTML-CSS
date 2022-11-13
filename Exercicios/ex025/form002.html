@@ -8,10 +8,18 @@
 </head>
 <body>
     <h1>Teste de formulário</h1>
-    <form action="cadastro.php" method="get">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iduser">Usuário: </label>
-            <input type="text" name="user" id="iduser">
+            <input type="text" name="user" id="iduser" required minlength="6" maxlength="15" size="15" placeholder="Mínimo 8 letras" autocomplete="username">
+        </p>
+        <p>
+            <label for="idpass">Senha: </label>
+            <input type="password" name="pass" id="idpass" required minlength="8" maxlength="15" size="15" placeholder="Mínimo 8 letras" autocomplete="current-password">
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
         </p>
     </form>
     
