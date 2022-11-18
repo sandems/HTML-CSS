@@ -17,7 +17,7 @@ header{
     background-color: grey;
 }
 
-h1 > header{
+header > h1{
     padding: 10px;
     text-align: center;
 }
